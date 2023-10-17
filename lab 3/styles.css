@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.main{
+    background-color: white;
+    padding: 10px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.header{
+    position: relative;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+h1{
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+}
+
+.header img{
+    width: 100%;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.playlist-song{
+    padding: 10px;
+    caret-color: #b5b6bb;
+    border: none;
+    width: 45%;
+    height: 210px;
+}

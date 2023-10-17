@@ -1,0 +1,25 @@
+div{
+    margin: 10px;
+}
+
+div:not(.checkbox){
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+form{
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #21ADD9;
+    border: 3px outset black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    background: url("images/background.jpeg");
+}
