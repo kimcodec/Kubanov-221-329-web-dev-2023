@@ -17,10 +17,26 @@ body{
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-h1{
+.btn{
+    font-size: 2em;
+    font-weight: bold;
+
+    transition: color 1s, border-color 1s;
+}
+
+.soundtrack-title{
     position: absolute;
     bottom: 5px;
     left: 20px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+}
+
+.creators-actors-title{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
     background-color: #fff;
     color: black;
     padding: 10px;
