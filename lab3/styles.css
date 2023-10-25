@@ -17,19 +17,33 @@ body{
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-.btn{
+.btn-on{
     font-size: 2em;
     font-weight: bold;
 
-    transition: color 1s, border-color 1s;
+    background-color: black;
+    color: white;
+}
+
+.btn-off{
+    font-size: 2em;
+    font-weight: bold;
+
+    color: black;
+    background-color: white;
+
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-off:hover{
+    background-color: black;
+    color: white;
 }
 
 .soundtrack-title{
     position: absolute;
     bottom: 5px;
     left: 20px;
-    background-color: #fff;
-    color: black;
     padding: 10px;
 }
 
@@ -37,8 +51,6 @@ body{
     position: absolute;
     bottom: 5px;
     right: 20px;
-    background-color: #fff;
-    color: black;
     padding: 10px;
 }
 
@@ -59,4 +71,27 @@ body{
     border: none;
     width: 45%;
     height: 210px;
+}
+
+.authors-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.author{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: black solid 2px;
+}
+
+.author-name{
+    font-size: 1em;
+}
+
+.author-range{
+    font-size: 0.6em;
 }

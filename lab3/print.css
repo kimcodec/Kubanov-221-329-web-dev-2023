@@ -1,0 +1,11 @@
+header{
+    display: none;
+}
+
+.playlist-song{
+    page-break-inside: avoid;
+}
+
+.author{
+    page-break-inside: avoid;
+}

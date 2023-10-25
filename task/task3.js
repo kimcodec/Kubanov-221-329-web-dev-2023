@@ -7,7 +7,7 @@ function minDigit(x){
     let n;
     while (x !== 0){
         n = x % 10;
-        x = x/10;
+        x = (x/10)|0;
         if (n < min){
             min = n;
         }
