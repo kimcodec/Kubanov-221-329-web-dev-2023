@@ -204,11 +204,10 @@ function clickHandler(event) {
         screen.textContent = '';
     } else if (target.classList.contains('result')) {
         try {
-            const result = evaluate(screen.textContent);
+            const result = evaluate(compile(screen.textContent));
             screen.textContent = result;
         } catch (error) {
-            screen.textContent = error;
-            console.error(error);
+            screen.textContent = 'Error';
         }
     }
 }
@@ -220,6 +219,6 @@ function clickHandler(event) {
 
 window.onload = function () {
     const calculator = document.querySelector('.calc-container');
-
-    calculator.addEventListener('click', clickHandler)
+    document.querySelector('.screen').textContent = '';
+    calculator.addEventListener('click', clickHandler);
 };
